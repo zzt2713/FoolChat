@@ -7,7 +7,7 @@ DBManager::DBManager(QObject *parent) : QObject(parent),m_lastError("ces")
 {
     QSettings settings("config.ini", QSettings::IniFormat);
 
-    m_host = settings.value("database/host", "39.104.80.114").toString();
+    m_host = settings.value("database/host", "xxxxxxx").toString();
     m_port = settings.value("database/port", 3308).toInt();
     m_dbName = settings.value("database/database_name", "mhkh").toString();
     m_username = settings.value("database/username", "root").toString();
